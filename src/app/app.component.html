@@ -1,0 +1,149 @@
+
+
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="index.html">COACHPYME
+      </a></h1>
+      <p>Evalúa y mejora tu negocio</p>
+    </div>
+    <div id="topnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Que obtengo</a></li>
+        <li class="active"><a href="#">Acceder</a></li>
+       </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="featured_slide">
+    <div id="featured_content">
+      <ul>
+        <li><img src="assets/images/logo.jpg" alt="" />
+          <div class="floater">
+            <h2>Toma decisiones fudamentadas y contextualizadas ¿Qué obtienes?</h2>
+            <p>INBONIS ofrece un diagnóstico detallado de la situación de tu empresa respecto de tu sector y recomendaciones para rentabilizar tu negocio.<a href="http://www.os-templates.com/">OS Templates</a>. This template is distributed using a <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>, which allows you to use and modify the template for both personal and commercial use when you keep the provided credit links in the footer. For more CSS templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>.</p>
+            
+          </div>
+        </li>
+        <li><img src="assets/images/logo.jpg" alt="" />
+          <div class="floater">
+            <h2>Aprovecha las oportunidades del big data para gestionar tu negocio.¿Para qué sirve?</h2>
+            <p>Para ayudarte a gestionar tu empresa sirviéndote de inteligencia artificial y el big data gracias a nuestro algoritmo Refocal® que te permite:&hellip;</p>
+            
+          </div>
+        </li>
+        <li><img src="assets/images/logo.jpg" alt="" />
+          <div class="floater">
+            <h2>Rápido, útil y eficaz.¿Cómo consigo mi Coach Pyme?</h2>
+            <p>Puedes conseguir tu Coach Pyme de forma automática y gratuita en nuestra plataforma online siguiendo los siguientes pasos:&hellip;</p>
+            
+          </div>
+        </li>
+      </ul>
+    </div>
+    <a href="javascript:void(0);" id="featured-item-prev"><img src="layout/images/prev.png" alt="" /></a> <a href="javascript:void(0);" id="featured-item-next"><img src="layout/images/next.png" alt="" /></a> </div>
+</div>
+<!--Formulario-->
+<!--Formulario-->
+<div class="login-box">
+  <h2>Evalúa y mejora tu negocio</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label>NIF</label>
+    </div>
+    <div class="user-box">
+    <div *ngIf="articulos!=null; else espera">
+      
+      <mat-form-field>
+        <mat-select placeholder="Operaciones" [(ngModel)]="seleccionada" name="operacion">
+          <mat-option *ngFor="let art of articulos" [value]="art.description">
+            {{art.description}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <ng-template #espera>Esperando datos...</ng-template>
+  </div>
+    <!--<div class="user-box">
+      <input type="password" name="" required="">
+      <label>Sector de actividad</label>
+    </div>-->
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Continuar
+    </a>
+  </form>
+</div>
+<!--Fin formulario-->
+<!--Fin formulario-->
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="container">
+    <div class="homepage">
+      <ul>
+        <li>
+          <h2><img src="assets/images/demo/1.gif" alt="" />Introduce el NIF y la actividad de tu negocio</h2>
+         <!-- <p class="readmore"><a href="#">Evaluación de tu pyme &raquo;</a></p>
+         <p class="readmore"><a href="#">Mejorar tu estrategia &raquo;</a></p>
+          <p class="readmore"><a href="#">Comparativa con tu sector &raquo;</a></p>-->
+        </li>
+        <li>
+          <h2><img src="assets/images/demo/2.gif" alt="" />Contesta un breve cuestionario</h2>
+          
+         <!-- <p class="readmore"><a href="#">tus puntos débiles y fuertes&raquo;</a></p>
+          <p class="readmore"><a href="#">Valorar aspectos de tu negocio &raquo;</a></p>
+            <p class="readmore"><a href="#">Gestionar con inteligencia artificial&raquo;</a></p>-->
+        </li>
+        <li class="last">
+          <h2><img src="assets//images/demo/3.gif" alt="" />Consigue una evaluación y consejos de mejora</h2>
+          
+        <!--  <p class="readmore"><a href="#">Introduce tu NIF y tu sector&raquo;</a></p>
+          <p class="readmore"><a href="#">Contesta al cuestionario &raquo;</a></p>
+            <p class="readmore"><a href="#">Consigue evaluación y mejoras &raquo;</a></p>-->
+        </li>
+      </ul>
+      <br class="clear" />
+    </div>
+  </div>
+</div>
+
+
+
+<div class="wrapper col5">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="#">Carlos Blanco Gómez</a></p>
+    <p class="fl_right"> <a target="_blank" href="https://demos.inbonis.com/coach-es-informa/que-obtengo" title="Free Website Templates"><img src="assets/images/descarga.png" /></a></p>
+    <br class="clear" />
+  </div>
+</div>
+
+
+
+
+
+<!--
+<div *ngIf="articulos!=null; else espera">
+
+  <mat-form-field>
+    <mat-select placeholder="Operaciones" [(ngModel)]="seleccionada" name="operacion">
+      <mat-option *ngFor="let art of articulos" [value]="art.description">
+        {{art.description}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<ng-template #espera>Esperando datos...</ng-template>
+-->
+
+<router-outlet></router-outlet>
+
